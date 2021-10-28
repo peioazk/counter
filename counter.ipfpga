@@ -1,0 +1,42 @@
+# -------------------------------------------------------------------------------------------------------------------
+# File : counter.ipfpga
+# Project : counter
+# Description : IPCPL Compilation resource datafile.
+# -------------------------------------------------------------------------------------------------------------------
+[PROJECT]
+counter
+[END]
+
+[IP_LIST]
+[END]
+
+[IP_SIM_LIST]
+[END]
+
+[PROJECT_LIBRARY]
+[END]
+
+[PROJECT_SOURCES]
+# path relative to project directory 
+rtl/counter.vhd
+[END]
+
+[TB_SOURCES]
+tb/tb_counter.vhd
+[END]
+
+[ALTERA]
+[10cl006ye144c8g]
+#quartusii_dir /opt/altera/19.1/quartus/bin
+altera_script_name ../altera_counter.tcl
+[ENDSUB]
+[END]
+
+[MODELSIM]
+vhdl_options -2008 -explicit
+[END]
+
+[DIR_STRUCT]
+# set directories relative to project directory
+sim_dir sim/
+[END]
